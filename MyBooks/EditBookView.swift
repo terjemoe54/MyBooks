@@ -23,7 +23,7 @@ struct EditBookView: View {
     @State private var dateAdded = Date.distantPast
     @State private var dateStarted = Date.distantPast
     @State private var dateCompleted = Date.distantPast
-    @State private var firstView = false
+    @State private var firstView = true
     
     var body: some View {
         HStack {
@@ -77,9 +77,9 @@ struct EditBookView: View {
                         // completed
                         dateCompleted = Date.now
                     }
-                    firstView = true
+                    firstView = false
                 }
-            }
+        }
             Divider()
             LabeledContent {
                 RatingsView(maxRating: 5, currentRating: $rating, width: 30)
