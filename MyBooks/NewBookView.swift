@@ -14,8 +14,8 @@ import SwiftData
 struct NewBookView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) var dismiss
-    @State private var title = "-" // "" må være sånn for iphone
-    @State private var author = "-" // "" må være sånn for iphone
+    @State private var title = "Min Bok" // "" må være sånn for iphone
+    @State private var author = "Meg" // "" må være sånn for iphone
     var body: some View {
         NavigationStack {
             Form {

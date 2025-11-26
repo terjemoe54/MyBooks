@@ -4,7 +4,7 @@
 //
 //  Created by Terje Moe on 14/10/2025.
 //
-
+// Denne bruker Swift Data
 
 
 
